@@ -1,0 +1,64 @@
+﻿We gonna start with question 2 and 3, then go back to the question 1.
+我們將從問題2和3開始，然後再回到問題1。
+
+1. You want to install sensors on the bridges to estimate overall traffic across all the bridges. But you only have enough budget to install sensors on three of the four bridges. Which bridges should you install the sensors on to get the best prediction of overall traffic?
+
+2. The city administration is cracking down on helmet laws, and wants to deploy police officers on days with high traffic to hand out citations. Can they use the next day's weather forecast to predict the number of bicyclists that day? 
+
+3. Can you use this data to predict whether it is raining based on the number of bicyclists on the bridges?
+
+[Question 2]
+What we should do:
+Find out the relationship between the weather and the number of bicycles in terms of data, and predict the number of bicycles for the next day from the weather forecast for the next day.
+我們的任務:
+根據數據找出天氣和自行車數量之間的關係，並根據明天的天氣預報預測明天的自行車數量。
+
+<Strategy>
+1. Create a dataset (list)
+ex) [Precipitation, NumberOfBikes] = [[p1,n1],[p2,n2],...,[pl,nl]]
+
+2. One is extracted from the data set, and a graph of degree 0 (y = a0) is calculated from the remaining data set.
+
+3. Put the data set that was taken out into the calculated equation of y, and calculate the error by MSE.
+
+
+4. Repeat steps 2 and 3. At this time, it must be that the data to be extracted has not been previously extracted.
+
+5. When you are done to the end, calculate the average value of MSE.
+
+6.  Calculate the average MSE by increasing the degree by one and calculating in the same way.
+
+7. Continue to increase the degree and select the model (calculation formula) with the lowest MES value as the answer.
+
+＜戰略＞
+1.創建一個數據集（列表）
+例如）[降水量，自行車數] = [[p1，n1]，[p2，n2]，...，[pl，nl]]
+
+2.從數據集中提取一個，然後從其餘數據集中計算一個度數為0（y = a0）的圖。
+
+3.將取出的數據集放入計算的y方程中，並通過MSE計算誤差。
+
+
+4.重複步驟2和3。這時，必須是要提取的數據之前尚未提取。
+
+5.完成後，計算MSE的平均值。
+
+6.通過將度數加1並以相同方式進行計算來計算平均MSE。
+
+7.繼續提高程度，並選擇具有最低MES值的模型（計算公式）作為答案。
+
+＜戦略＞
+１．データセット（リスト）を作成する
+例）[Precipitation, NumberOfBikes] = [[p1,n1],[p2,n2],...,[pl,nl]]
+
+２．データセットから一つを取り出し、残りのデータセットから次数０（ｙ＝a0）のグラフを計算する。
+
+３．計算されたｙの式に取り出しておいたデータセットを入れて、その誤差をMSEで出す。
+
+４．２と３の作業を繰り返す。この時、取り出すデータは過去に取り出されていないものにする。
+
+５．最後までやり終えたらMSEの平均値を計算する。
+
+６．次数を一つ上げて同様に計算し、平均MSEを計算する。
+
+７．次数を上げ続け、もっともMESの値が低いモデル（計算式）を選び抜き答えとする。
